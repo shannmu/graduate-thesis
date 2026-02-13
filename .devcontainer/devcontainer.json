@@ -1,0 +1,40 @@
+{
+  "name": "texlive-zh-xelatex",
+  "image": "texlive/texlive:latest",
+  "workspaceFolder": "/work",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/work,type=bind,consistency=cached",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "james-yu.latex-workshop"
+      ],
+      "settings": {
+        "latex-workshop.view.pdf.viewer": "tab",
+        "latex-workshop.latex.autoBuild.run": "onFileChange",
+        "latex-workshop.synctex.afterBuild.enabled": true,
+        "latex-workshop.latex.tools": [
+          {
+            "name": "latexmk (xelatex)",
+            "command": "latexmk",
+            "args": [
+              "-pdfxe",
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "%DOC%"
+            ]
+          }
+        ],
+        "latex-workshop.latex.recipes": [
+          {
+            "name": "latexmk (xelatex)",
+            "tools": [
+              "latexmk (xelatex)"
+            ]
+          }
+        ],
+        "latex-workshop.latex.recipe.default": "latexmk (xelatex)"
+      }
+    }
+  }
+}
