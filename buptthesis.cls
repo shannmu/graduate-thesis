@@ -394,7 +394,7 @@
 }
 
 %% linespread行间距
-\setlength{\parskip}0 % 取消段落之间的行间距
+\setlength{\parskip}{0pt} % 取消段落之间的行间距
 \linespread{1.4}\selectfont % 1.5倍行距，要求为20磅，小四号字体情况下差2磅
 %\setlength{\baselineskip}{2000pt}
 

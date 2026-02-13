@@ -7,7 +7,7 @@
 ## 基本使用说明
 
 1. 下载模板文件：`bupt_thesis.zip`
-2. 当前该模板只支持[overleaf](https://www.overleaf.com/)进行编译，`Complier`注意选择`XeLaTeX`。直接上传项目压缩包
+2. 当前该模板支持[overleaf](https://www.overleaf.com/)进行编译和texlive/texlive镜像编译，`Complier`注意选择`XeLaTeX`。直接上传项目压缩包
 3. 修改`main.tex`文件，按照模板要求填写相关信息
 4. 在`Chapters`下创建正文当中的章节内容，并将其引用加入到`main.tex`当中
 
